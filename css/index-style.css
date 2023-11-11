@@ -1,0 +1,279 @@
+@import "style.css";
+/* Css phan chung cua toan bo web */
+h4,
+h6 {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.section-content,
+.section-content+div {
+    margin-top: 5px;
+}
+
+a {
+    transition-duration: 0.3s;
+}
+
+
+/*CSS HEADER*/
+
+header {
+    background-image: url(/image/icon/background-header.jpg);
+}
+
+.tieude {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.col30 img {
+    width: 100%;
+}
+
+.tieude>.col40 {
+    padding-top: 3%;
+}
+
+.tieude>.col10 {
+    padding-top: 2%;
+}
+
+.tieude>.col40>.search {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.search input {
+    height: 60%;
+    display: block;
+    padding: 10px;
+    border: 2px solid #ffa500
+}
+
+input[type="search"] {
+    width: 90%;
+    border-radius: 5px 0 0 5px;
+}
+
+input[type="image"] {
+    background-color: #ffa500;
+    border-radius: 0 5px 5px 0;
+}
+
+.header-icon {
+    text-align: center;
+}
+
+.header-icon a {
+    color: #ffa500;
+}
+
+.col10>a:hover .header-icon-label {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* SECTION MAIN */
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+.main>section {
+    border-bottom: 5px solid #ffffff;
+}
+
+
+/*SECTION CONTENT*/
+
+.bootstrap-carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    height: 450px;
+}
+
+
+/* .carousel-inner img, */
+
+.info-dog img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    transition: transform 1s;
+}
+
+.info-dog img:hover {
+    transform: scale(1.025);
+}
+
+.list-dog,
+.info-dog {
+    flex-wrap: wrap;
+}
+
+.list-dog,
+.info-dog>div,
+.news,
+.news>.one-news {
+    display: flex;
+}
+
+.info-dog {
+    width: 25%;
+    border: 5px solid #f2f2f2;
+    border-radius: 1.5vw;
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+    transition: width 1s;
+    position: relative;
+    display: inline-block;
+}
+
+.info-dog,
+.info-dog>div div {
+    padding: 10px;
+}
+
+.info-dog .col60 {
+    text-align: right;
+}
+.info-dog-buy{
+    margin-top: 0;
+}
+/* Css san pham */
+.info-dog:hover .overlay{
+    display: block;
+}
+
+.info-dog .col40 a {
+    display: block;
+    width: 100%;
+    padding: 0.5vw;
+    background-color: #ffffff;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    color: #ff0000;
+    text-align: center;
+}
+
+.info-dog .col40 a:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main div>h4 {
+    color: #ffffff;
+    background-color: #ff0000;
+    margin-bottom: 0px;
+    width: 25%;
+    border-radius: 0 20px 0 0;
+}
+
+.main>div {
+    border-bottom: 1px solid #ffa500;
+}
+/* ARTICLE */
+
+.news {
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    /* độ đen trăng */
+    /*  tính luôn tất cả */
+}
+
+.news>.one-news {
+    filter: grayscale(98%);
+}
+
+.news>.one-news:hover {
+    filter: grayscale(0%)
+}
+
+.news>.one-news {
+    padding: 10px;
+    width: 50%;
+}
+
+.one-news img {
+    width: 100%;
+}
+
+.one-news>div {
+    padding: 10px;
+    width: 40%;
+}
+
+.info {
+    width: 60% !important;
+}
+
+.info a {
+    display: block;
+    color: #ffa500;
+    font-weight: bold;
+}
+
+.info a:hover {
+    color: #3399ff;
+    text-decoration: none;
+}
+.col10.header-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.col10.header-icon a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col10.header-icon img {
+    max-width: 25px; /* Điều chỉnh kích thước ảnh */
+}
+.col10.header-icon .header__cart-product-img{
+    max-width: 100%;
+}
+
+.col10.header-icon .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.892);
+    z-index: 1;
+    top: 100%; /* Hiển thị dropdown bên dưới phần tử gốc */
+}
+
+.col10.header-icon:hover .dropdown-content {
+    display: block;
+}
+
+.col10.header-icon .dropdown-content a {
+    color: rgb(245, 90, 0);
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    text-align: center; /* Đặt vị trí văn bản ở giữa */
+}
+
+.col10.header-icon .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+/* khi dang nhap vao tai khoan thi chuyen thanh block */
+.dropdown-logout{
+display: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login__register.css">
+    <title>Đổi mật khẩu</title>
+</head>
+<body>
+    <div class="overlay__pass hidden"></div>
+    <div class="container">
+    <div class="login form">
+      <header>Đổi mật khẩu</header>
+      <form action="#">
+        <input type="text" placeholder="Vui lòng nhập Email">
+        <input type="password" placeholder="Vui lòng nhập Mật khẩu cũ">
+        <input type="password" placeholder="Vui lòng nhập Mật khẩu mới">
+        <a href="./forget_password.html">Quên mật khẩu</a>
+        <input type="button" class="button change_password" value="Đổi mật khẩu">
+      </form>
+      <div class="signup">
+        <span class="signup">Chưa có tài khoản?
+         <a href="./register.html">Đăng ký</a>
+        </span>
+      </div>
+    </div>
+</div>
+
+<div class="pass-notify hidden">
+    <span class="signup">Đổi mật khẩu thành công!
+    <input type="button" class="button login_button" value="Đăng nhập">
+</div>
+    <script>
+        // su kien doi mat khau
+  const changePasswordButton = document.querySelector('.change_password');
+  const passNotify = document.querySelector('.pass-notify');
+  const overlayPass = document.querySelector('.overlay__pass');
+  const loginButton = document.querySelector('.login_button');
+
+  // Sự kiện click nút "Đổi mật khẩu"
+  changePasswordButton.addEventListener('click', function() {
+    // Ẩn form đổi mật khẩu và hiển thị thông báo
+    passNotify.style.display = 'block';
+    overlayPass.style.display = 'block';
+  });
+
+  // Sự kiện click nút "Đăng nhập" trên thông báo
+  loginButton.addEventListener('click', function() {
+    // Chuyển đến màn hình đăng nhập
+    location.href = './login.html';
+  });
+    </script>
+</body>
+</html>

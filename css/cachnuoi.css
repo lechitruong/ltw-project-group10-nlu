@@ -1,0 +1,33 @@
+@import "style.css";
+
+/* SECTION */
+
+.main {
+    width: 80%;
+    margin: 10px auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.main p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.list-way {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.list-way h2 {
+    color: #ffa500;
+    padding: 15px 0 15px 0;
+}
+
+.image-dog {
+    width: 55%;
+}
+
+.image-dog img {
+    width: 100%;
+}
